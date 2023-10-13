@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "base-e466b": {
+      "hosting": {
+        "base": [
+          "shakami"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "base-e466b"
+  }
+}
