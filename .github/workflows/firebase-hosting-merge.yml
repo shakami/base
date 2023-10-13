@@ -18,3 +18,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BASE_E466B }}'
           channelId: live
           projectId: base-e466b
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
