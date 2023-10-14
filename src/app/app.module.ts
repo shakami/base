@@ -1,21 +1,30 @@
+// angular modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// ng material modules
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+
+// app modules
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ShbNavbarComponent } from './shb-navbar/shb-navbar.component';
+import { ShbFooterComponent } from './shb-footer/shb-footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShbNavbarComponent,
+    ShbFooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
