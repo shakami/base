@@ -11,13 +11,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ShbNavbarComponent } from './shb-navbar/shb-navbar.component';
+import { ShbMainComponent } from './shb-main/shb-main.component';
 import { ShbFooterComponent } from './shb-footer/shb-footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShbNavbarComponent,
-    ShbFooterComponent
+    ShbFooterComponent,
+    ShbMainComponent
   ],
   imports: [
     BrowserModule,
