@@ -1,3 +1,7 @@
+.resume-container .row {
+    margin-bottom: 1rem;
+}
+
 .mat-card {
     box-shadow: none;
 }
