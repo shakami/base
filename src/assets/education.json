@@ -1,0 +1,14 @@
+[
+    {
+        "school": "University of Washington",
+        "major": "B.S. in Computer Science",
+        "dateFrom": "2015",
+        "dateTo": "2018"
+    },
+    {
+        "school": "Bellevue College",
+        "major": "Associate in Arts and Sciences",
+        "dateFrom": "2012",
+        "dateTo": "2015"
+    }
+]
