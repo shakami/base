@@ -1,52 +1,73 @@
 <section>
-    <div class="container resume-container">
-        <!-- Education -->
+    <div class="container-fluid resume-container">
         <div class="row">
-            <div class="col-2">
-                <mat-card>
-                    <img mat-card-image class="profile-image" src="./assets/UW.png" alt="University of Washington" />
-                </mat-card>
-            </div>
-            <!-- Education Table -->
-            <div class="col-10">
-                <table mat-table [dataSource]="tblEducationSource" class="mat-elevation-z5">
-                    <ng-container matColumnDef="data">
-                        <th mat-header-cell *matHeaderCellDef><i class="fa fa-graduation-cap"></i>&nbsp;Education</th>
-                        <td mat-cell *matCellDef="let row">
-                            <div>
-                                <span class="school-name">{{ row.school }}:</span>
-                                &nbsp;
-                                <span class="school-major">{{ row.major }}</span>
-                            </div>
-                            <div>
-                                <span class="school-dates">{{ row.dateFrom }} - {{ row.dateTo }}</span>
-                            </div>
-                        </td>
-                    </ng-container>
-                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                </table>
+            <div class="d-block d-sm-none">
+                <span class="display-5">Sepehr Hakami</span>
+                <hr />
             </div>
         </div>
-        <!-- Employment -->
         <div class="row">
-            <div class="col-2">
+            <div class="col-sm-3">
                 <mat-card>
                     <img mat-card-image class="profile-image" src="./assets/shakami.jpg" alt="Sepehr Hakami" />
                 </mat-card>
+                <br />
+                <br />
+                <div class="">
+                    <h2>Contact:</h2>
+                    <fieldset>
+                        <label>Address</label>
+                        <p>Woodinville, WA 98072</p>
+                    </fieldset>
+                    <fieldset>
+                        <label>Phone</label>
+                        <p>(918) 219 - 9441</p>
+                    </fieldset>
+                    <fieldset>
+                        <label>Email</label>
+                        <p>sepehr@shakami.com</p>
+                    </fieldset>
+                </div>
             </div>
-            <!-- Employment Table -->
-            <div class="col-10">
-                <table mat-table [dataSource]="tblExperienceSource" class="mat-elevation-z5">
-                    <ng-container matColumnDef="data">
-                        <th mat-header-cell *matHeaderCellDef><i class="fa fa-code"></i>&nbsp;Experience</th>
-                        <td mat-cell *matCellDef="let row">
-                            {{ row.company }}
-                        </td>
-                    </ng-container>
-                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                </table>
+            <div class="col-sm-9">
+                <div class="d-none d-sm-block">
+                    <span class="display-5">Sepehr Hakami</span>
+                    <hr />
+                </div>
+                <!-- Education -->
+                <div class="row">
+                    <table mat-table [dataSource]="tblEducationSource" class="mat-elevation-z5">
+                        <ng-container matColumnDef="data">
+                            <th mat-header-cell *matHeaderCellDef><i class="fa fa-graduation-cap"></i>&nbsp;Education
+                            </th>
+                            <td mat-cell *matCellDef="let row">
+                                <div>
+                                    <span class="school-name">{{ row.school }}:</span>
+                                    &nbsp;
+                                    <span class="school-major">{{ row.major }}</span>
+                                </div>
+                                <div>
+                                    <span class="school-dates">{{ row.dateFrom }} - {{ row.dateTo }}</span>
+                                </div>
+                            </td>
+                        </ng-container>
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                </div>
+                <!-- Employment -->
+                <div class="row">
+                    <table mat-table [dataSource]="tblExperienceSource" class="mat-elevation-z5">
+                        <ng-container matColumnDef="data">
+                            <th mat-header-cell *matHeaderCellDef><i class="fa fa-code"></i>&nbsp;Experience</th>
+                            <td mat-cell *matCellDef="let row">
+                                {{ row.company }}
+                            </td>
+                        </ng-container>
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

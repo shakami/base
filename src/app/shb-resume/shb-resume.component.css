@@ -4,6 +4,7 @@
 
 .mat-card {
     box-shadow: none;
+    margin-bottom: 32px;
 }
 
 .mat-card img.profile-image {
