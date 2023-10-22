@@ -1,0 +1,39 @@
+.resume-container .row {
+    margin-bottom: 1rem;
+}
+
+.mat-card {
+    box-shadow: none;
+    margin-bottom: 32px;
+}
+
+.mat-card img.profile-image {
+    margin-bottom: -32px;
+    border-radius: 4px;
+}
+
+.mat-table {
+    margin: 0 1rem;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.mat-table td,
+.mat-table th {
+    padding: 1rem;
+}
+
+.mat-table .mat-cell {
+    font-size: 12px;
+}
+
+.school-name {
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.school-dates {
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
