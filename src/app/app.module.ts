@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 
 // app modules
+import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ShbNavbarComponent } from './shb-navbar/shb-navbar.component';
@@ -18,7 +19,6 @@ import { ShbMainComponent } from './shb-main/shb-main.component';
 import { ShbFooterComponent } from './shb-footer/shb-footer.component';
 import { ShbHomeComponent } from './shb-home/shb-home.component';
 import { ShbResumeComponent } from './shb-resume/shb-resume.component';
-import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
