@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReCaptchaV3Service } from 'ng-recaptcha';
 import { Education } from './education';
 import { Employment } from './employment';
 import * as EDUCATIONS from 'src/assets/education.json';
@@ -12,12 +13,15 @@ import * as EMPLOYMENTS from 'src/assets/employment.json';
 
 export class ShbResumeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private recaptchaV3Service: ReCaptchaV3Service) { }
 
-  ngOnInit(): void { }
+  public beforeSubmittingForm(): void { }
+  
+  ngOnInit(): void {
+    this.recaptchaV3Service.execute('importantAction');
+  }
 
   displayedColumns: string[] = ['data'];
   tblEducationSource: Education[] = Array.from(EDUCATIONS);
   tblExperienceSource: Employment[] = Array.from(EMPLOYMENTS);
-
 }
